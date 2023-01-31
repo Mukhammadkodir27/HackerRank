@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	// Complete the program
+    int a, b;
+    string s1, s2;
+    cin>>s1>>s2;
+    
+    a = s1.size();
+    b = s2.size();
+    
+    cout<<a<<" "<<b<<endl;
+    string s3 = s1 + s2;
+    cout<<s3<<endl;
+    char temp1 = s1[0];
+    char temp2 = s2[0];
+    s1[0] = temp2;
+    s2[0] = temp1;
+    
+    cout<<s1<<" "<<s2;
+     
+    return 0;
+}
+
+//===============================
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    //string declaration
+    string name = "Mukhammadkodir";
+    string surname = "Abdusalomov";
+    //string concatenation a + b    
+    string c = name + surname;
+    cout<<c<<endl;
+    //accessing ith element
+
+    string a = "abc";
+    char a1 = a[0]; //a
+    char a2 = a[1]; //b
+    char a3 = a[2]; //c
+
+    a[0] = 'b';  //"bbc"
+    
+    //size 
+    int len = a.size();
+
+    return 0;
+}
