@@ -39,3 +39,33 @@ if __name__ == "__main__":
 # : Insert  at index , .
 # : Print the array.
 # Output:
+
+
+# method
+
+if __name__ == "__main__":
+    arr = []
+    n = int(input())  # number of commands
+
+    for i in range(n):
+        command_input = input()
+        command_list = command_input.split()
+        command = command_list[0]
+
+        if command == "insert":
+            # in insert we need to provide 2 args, index and value
+            arr.insert(int(command_list[1]), int(command_list[2]))
+        elif command == "print":
+            print(arr)
+        elif command == "remove":
+            # command[0] was command name and command[1] is its value (element)
+            arr.remove(int(command_list[1]))
+        elif command == "append":
+            arr.append(int(command_list[1]))
+        elif command == "sort":
+            arr.sort()
+        elif command == "pop":
+            arr.pop()
+        elif command == "reverse":
+            arr.reverse()
+
