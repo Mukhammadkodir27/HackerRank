@@ -7,7 +7,5 @@ if __name__ == "__main__":
     A = set(M)
     B = set(N)
 
-    difference = A.symmetric_difference(B)
-    sorted_set = sorted(difference, reverse=False)
-    for i in sorted_set:
-        print(i)
+    set_difference = A.difference(B)
+    print(len(set_difference))
